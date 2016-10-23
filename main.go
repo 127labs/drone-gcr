@@ -64,7 +64,7 @@ func main() {
 		args := []string{"-d"}
 
 		if len(vargs.Storage) != 0 {
-			args = append(args, "-s", vargs.Storage)
+			args = append(args, "daemon", vargs.Storage)
 		}
 
 		cmd := exec.Command("/usr/bin/docker", args...)
